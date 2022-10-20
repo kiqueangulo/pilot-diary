@@ -1,6 +1,6 @@
 import express from "express";
 
-import diaryRouter from "./routes/diaries";
+import diaryRouter from "./routes/diaries.routes";
 
 const app = express();
 
