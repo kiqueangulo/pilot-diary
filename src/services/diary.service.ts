@@ -6,6 +6,10 @@ const diaries: DiaryEntry[] = diaryData as DiaryEntry[];
 
 export const getEntries = (): DiaryEntry[] => diaries;
 
+export const findById = (id: number): DiaryEntry | undefined => {
+  return diaries.find((diary) => diary.id === id);
+};
+
 export const getEntriesWithoutSentitiveInfo =
   (): NonSensitiveInfoDiaryEntry[] => {
     return diaries.map(({ id, date, weather, visibility }) => {
