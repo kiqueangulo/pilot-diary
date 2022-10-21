@@ -1,4 +1,5 @@
-import { NewDiaryEntry, Weather, Visibility } from "./types"
+import { NewDiaryEntry } from "./types"
+import { Weather, Visibility } from "./enums"
 
 const isString = (param: any): boolean =>
   typeof param === "string" || param instanceof String ? true : false
